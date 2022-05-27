@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: rgb(15, 15, 15);
+    font-family: sans-serif;
+    width: 100%;
+}
+@media only screen and (min-width:320px) and (max-width:1023px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:15px 20px;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    header h1{
+        font-weight: 700;
+    }
+    header a{
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(15, 15, 15);
+        
+    }
+    .menu2 a:hover{
+        color: rgb(20, 173, 233);
+    }
+    .menu2 ul{
+        display: none;
+        font-weight: 500;
+    }
+    .menu i:hover{
+        color: rgb(20, 173, 233);
+        display: none;
+    }
+    .menu ul li:hover .menu2 ul {
+        display: block;
+        
+    }
+    header nav ul{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        flex-direction: column;
+        font-weight: 400;
+    }
+    .container{
+        width: 80%;
+        margin-left: 34px;
+    }
+    .container h4.hero{
+        width: 350px;
+        padding-top: 7px;
+        line-height: 45px;
+        font-weight: 200;
+        font-size: 35px;
+    }
+    .container .color-hero{
+        color: rgb(20, 173, 233);
+    }
+    section img{
+        margin: 10px 0;
+        margin-left:10px ;
+        width: 95%;
+        border-radius: 15px;
+    }
+    .container .hero2,.course-section h4{
+        font-size: 35px;
+        font-weight: 200;
+        width: 280px;
+        margin-bottom: 20px;
+    }
+    .container .sec-hero{
+        width: 370px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    .input{
+        width: fit-content;
+        padding: 3px;
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        margin-top: 10px;
+        background-color: rgba(128, 128, 128, 0.411);
+    }
+    input{
+        background-color: rgba(128, 128, 128, 0.068);
+        border: none;
+        outline: none;
+        caret-color: white;
+        color: gray;
+        padding-left: 15px;
+    }
+    .input button,.servicess button{
+        background-color: rgb(20, 173, 233);
+        padding:8px 15px;
+        text-transform: capitalize;
+        font-family: sans-serif;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+    .servicess button{
+        background-color: gray;
+    }
+    .course-section, .designs,.bottom-section,.re-mark{
+        padding-left: 50px;
+        padding-top: 80px;
+    }
+    .course-section h4{
+        line-height: 45px;
+    }
+    .servicess{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .servicess p{
+        width:300px ;
+        margin: 10px 0;
+        line-height: 23px;
+    }
+    .servicess i{
+        font-size: 18px;
+        padding: 7px;
+        border-radius: 7px;
+        margin-bottom: 15px;
+        color: white;
+    }
+    .sec{
+        margin-left: -20px;
+        width: 90%;
+        padding:10px 0 10px 25px ;
+    }
+    .servicess .sec:hover button{
+        background-color: rgb(20, 173, 233);
+    }
+    .servicess .sec:hover{
+        transition:all 0.5s;
+        border-radius: 10px;
+        box-shadow: -5px 5px 6px #666666,5px -5px 6px #ffffff;
+        
+    }
+    .ui i{
+        background-color:rgb(20, 173, 233);
+    }
+    .front-end i{
+        background-color:green;
+    }
+    .back-end i{
+        background-color:rgb(243, 12, 12);
+    }
+    .designs{
+        margin-left: -20px;
+    }
+    .designs img{
+        border-radius: 25px;
+        width: 95%;
+    }
+    .layout-top .lft,.layout-bottom .rht{
+        padding: 20px 0;
+    }
+    .designs h2{
+        width: 420px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        line-height: 45px;
+        font-weight: 200;
+    }
+    .designs h5{
+        font-weight: 200;
+    }
+    .rht a{
+        float: left;
+        text-decoration: none;
+        color: rgb(20, 173, 233);
+        margin-top: 10px;
+    }
+    .designs h5{
+        font-size: 25px;
+        font-weight: 200;
+        padding: 10px 0;
+        color: rgb(92, 76, 76);
+    }
+    .designs h4{
+        font-weight: 200;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    .bottom-section img{
+        width: 100%;
+    }
+    .bottom-section .box2{
+        display: flex;
+        gap: 13px;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+    .bottom-section{
+        margin-left: -20px;
+        flex-direction: column;
+    }
+    .bottom-section h5{
+        color: rgb(250, 3, 3);
+        line-height: 45px;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .bottom-section p{
+        width: 200px;
+        font-weight: 200;
+        margin-top: 10px;
+        line-height: 25px;
+    }
+    .bottom-section h4{
+        line-height: 45px;
+        width: 300px;
+        font-weight: 200;
+        font-size: 45px;
+    }
+    .bottom-section img{
+        border-radius: 25px;
+    }
+    .box2-rht{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .re-mark h4{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        padding-bottom: 40px;
+        width: 330px;
+    }
+    .re-mark .img-box{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .re-mark img{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+    }
+    .re-mark .text{
+        text-transform: capitalize;
+        font-weight: 200;
+    }
+    .text h5{
+        font-size: 20px;
+        margin-top: -20px;
+        font-weight: 100;
+        color: rgb(31, 28, 28);
+    }
+    .re-mark  .text h4{
+        font-size: 30px;
+    
+    }
+    .end, footer{
+        background: rgb(8, 8, 8);
+        color: white;
+    }
+    .end{
+        margin-top: 90px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .end i{
+        background: white;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .end h2{
+        padding: 10px;
+        font-size: 30px;
+    }
+    .end nav li{
+        margin: 14px 0;
+        list-style: none;
+    }
+    .end .logo{
+        text-transform: capitalize;
+    }
+    .end a{
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+        font-weight: 100;
+        font-family: sans-serif;
+    }
+    .end .inp{
+        padding-top: 40px;
+    }
+    .end .input{
+        height: 45px;
+        width: 100%;
+        background-color: white;
+    }
+    .end input{
+        width: 90%;
+    }
+    footer{
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+@media only screen and (min-width:1024px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:15px 20px;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    header h1{
+        font-weight: 700;
+    }
+    header a{
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(15, 15, 15);
+        
+    }
+    .fa-bars{
+        display: none;
+    }
+    header nav ul{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        font-weight: 400;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container h4.hero{
+        width: 450px;
+        margin-top: 7px;
+        line-height: 45px;
+        font-weight: 200;
+        font-size: 45px;
+    }
+    .container .color-hero{
+        color: rgb(20, 173, 233);
+    }
+    section img{
+        margin: 10px 0;
+        margin-left:20px ;
+        border-radius: 15px;
+    }
+    .container .hero2,.course-section h4{
+        font-size: 45px;
+        font-weight: 200;
+        width: 360px;
+        margin-bottom: 20px;
+    }
+    .container .sec-hero{
+        width: 300px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    .input{
+        width: fit-content;
+        padding: 3px;
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        margin-top: 10px;
+        background-color: rgba(128, 128, 128, 0.411);
+    }
+    input{
+        background-color: rgba(128, 128, 128, 0.068);
+        border: none;
+        outline: none;
+        caret-color: white;
+        color: gray;
+        padding-left: 15px;
+    }
+    .input button,.servicess button{
+        background-color: rgb(20, 173, 233);
+        padding:8px 15px;
+        text-transform: capitalize;
+        font-family: sans-serif;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+    .servicess button{
+        background-color: gray;
+    }
+    .course-section, .designs,.bottom-section,.re-mark{
+        margin-left: 70px;
+        margin-top: 80px;
+    }
+    .course-section h4{
+        line-height: 45px;
+    }
+    .servicess{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .servicess p{
+        width:250px ;
+        margin: 10px 0;
+        line-height: 23px;
+    }
+    .servicess i{
+        font-size: 18px;
+        padding: 7px;
+        border-radius: 7px;
+        margin-bottom: 15px;
+        color: white;
+    }
+    .sec{
+        padding:10px 25px ;
+    }
+    .servicess .sec:hover button{
+        background-color: rgb(20, 173, 233);
+    }
+    .servicess .sec:hover{
+        transition:all 0.5s;
+        border-radius: 10px;
+        box-shadow: -5px 5px 6px #666666,5px -5px 6px #ffffff;
+        
+    }
+    .ui i{
+        background-color:rgb(20, 173, 233);
+    }
+    .front-end i{
+        background-color:green;
+    }
+    .back-end i{
+        background-color:rgb(243, 12, 12);
+    }
+    .designs img{
+        border-radius: 15px;
+    }
+    .layout-top,.layout-bottom{
+        position: relative;
+        padding: 20px 0;
+    }
+    .designs h2{
+        width: 450px;
+        margin-bottom: 90px;
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: 200;
+    }
+    .designs .lft{
+        position: relative;
+        left: 70px;
+    
+    }
+    .designs .rht{
+        position: absolute;
+        top: -70px;
+        right: 70px;
+    }
+    .designs h5{
+        font-weight: 200;
+    }
+    .rht a{
+        float: right;
+        text-decoration: none;
+        color: rgb(20, 173, 233);
+        margin-top: 70px;
+    }
+    .designs h5{
+        font-size: 25px;
+        font-weight: 200;
+        padding: 10px 0;
+        color: rgb(92, 76, 76);
+    }
+    .designs h4{
+        font-weight: 200;
+        font-size: 30px;
+    }
+    .bottom-section,.box2{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .bottom-section h5{
+        color: rgb(250, 3, 3);
+        line-height: 45px;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .bottom-section p{
+        width: 200px;
+        font-weight: 200;
+        margin-top: 10px;
+        line-height: 25px;
+    }
+    .bottom-section h4{
+        line-height: 45px;
+        width: 300px;
+        font-weight: 200;
+        font-size: 45px;
+    }
+    .bottom-section img{
+        border-radius: 25px;
+    }
+    .box2-rht{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .re-mark h4{
+        font-size: 45px;
+        font-weight: 200;
+        line-height: 45px;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+    .re-mark .img-box{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .re-mark img{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+    }
+    .re-mark .text{
+        text-transform: capitalize;
+        width: 500px;
+        font-weight: 200;
+    }
+    .text h5{
+        font-size: 25px;
+        margin-top: -20px;
+        font-weight: 100;
+        color: rgb(31, 28, 28);
+    }
+    .re-mark  h4{
+        font-size: 40px;
+    
+    }
+    .end, footer{
+        background: rgb(8, 8, 8);
+        color: white;
+    }
+    .end{
+        margin-top: 90px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .end i{
+        background: white;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .end h2{
+        padding: 10px;
+        font-size: 30px;
+    }
+    .end nav li{
+        margin: 14px 0;
+        list-style: none;
+    }
+    .end .logo{
+        text-transform: capitalize;
+    }
+    .end a{
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+        font-weight: 100;
+        font-family: sans-serif;
+    }
+    .end .input{
+        height: 45px;
+        background-color: white;
+    }
+    footer{
+        text-align: center;padding: 20px 0;
+    }
+}
+section,.bottom-section,header,.course-section,.designs,.re-mark,.end,footer{
+    overflow: hidden;
+}
